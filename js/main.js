@@ -155,5 +155,11 @@ jQuery(document).ready(function($) {
   $(window).on('resize', function() {
     setPortfolio();
   });
+  
+  // Nivo Lightbox 
+    $('.portfolio-item a').nivoLightbox({
+            effect: 'slideDown',  
+            keyboardNav: true,                            
+        });
 
 });
