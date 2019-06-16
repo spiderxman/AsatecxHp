@@ -27,7 +27,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="pageTitle">お問合せ</h2>
+				<h2 class="pageTitle">お問い合わせ</h2>
 			</div>
 		</div>
 	</div>
@@ -37,7 +37,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div><h2>Get In Touch</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus ovident, doloribus omnis minus temporibus perferendis nesciunt..</div>
+				<div><h2>ご相談・お問い合わせ</h2>この度は弊社ホームページをご覧頂きまして誠にありがとうございます。こちらでは弊社へのご相談やお問い合わせ、ご質問などを承っております。</div>
 				<br>
 			</div>
 		</div>
@@ -45,34 +45,40 @@
 						<div class="col-md-5">
 							   <!-- Form itself -->
           <form name="sentMessage" id="contactForm"  novalidate>
-	       <h3>Contact me</h3>
+	       <h5>　※貴社のご希望や課題に対してスムーズに対応するため、下記項目のご入力をお願いいたします。担当よりご連絡をさせていただきます。</h5>
 		 <div class="control-group">
-                    <div class="controls">
-			<input type="text" class="form-control" 
-			   	   placeholder="Full Name" id="name" required
+            <div class="controls">
+			お名前<input type="text" class="form-control" 
+			   	   placeholder="例) 田中　太郎" id="name" required
+			           data-validation-required-message="Please enter your name" />
+			ふりがな<input type="text" class="form-control" 
+			   	   placeholder="例) たなか　たろう" id="name" required
 			           data-validation-required-message="Please enter your name" />
 			  <p class="help-block"></p>
 		   </div>
-	         </div> 	
-                <div class="control-group">
-                  <div class="controls">
-			<input type="email" class="form-control" placeholder="Email" 
+	     </div> 	
+         <div class="control-group">
+            <div class="controls">
+			電話番号<input type="email" class="form-control" placeholder="例) 08012345678" 
+			   	            id="email" required
+			   		   data-validation-required-message="Please enter your tel" />
+			メールアドレス<input type="email" class="form-control" placeholder="例) email@domain.com" 
 			   	            id="email" required
 			   		   data-validation-required-message="Please enter your email" />
-		</div>
+			</div>
 	    </div> 	
 			  
                <div class="control-group">
                  <div class="controls">
 				 <textarea rows="10" cols="100" class="form-control" 
-                       placeholder="Message" id="message" required
+                       placeholder="" id="message" required
 		       data-validation-required-message="Please enter your message" minlength="5" 
                        data-validation-minlength-message="Min 5 characters" 
                         maxlength="999" style="resize:none"></textarea>
 		</div>
                </div> 		 
 	     <div id="success"> </div> <!-- For success/fail messages -->
-	    <button type="submit" class="btn btn-primary pull-right">Send</button><br />
+	    <button type="submit" class="btn btn-primary pull-right">送信</button><br />
           </form>	
 					</div>
 								<div class="col-md-offset-1 col-md-6">
